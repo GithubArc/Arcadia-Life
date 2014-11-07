@@ -4740,7 +4740,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Jage";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Dispensary"",life_fnc_virt_menu,""medmarijuana"",0,false,false,"""",' license_civ_medmarijuana && playerSide == civilian'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Jager's Dispensary"",life_fnc_virt_menu,""weed"",0,false,false,"""",' license_civ_medmarijuana && playerSide == civilian'];";
 				};
 			};
 		};
