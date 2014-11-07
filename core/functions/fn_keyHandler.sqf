@@ -102,19 +102,9 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
-		};
-		
-//Robbing
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
-		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(player getVariable["surrender",false])) then
-			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
-			};
-			_handled = true;
 		};
 	};
 
@@ -150,6 +140,7 @@ switch (_code) do
 			};
 		};
 	};
+
 
 	//T Key (Trunk)
 	case 20:
@@ -269,7 +260,6 @@ switch (_code) do
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
-						player say3D "unlock";
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -277,72 +267,11 @@ switch (_code) do
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
-						player say3D "car_lock";
 					};
 				};
 			};
 		};
 	};
-	//Takwondo(Traditional Martial arts in korea)(Shift + Num 1)
-case 79:
-{
-	if(_shift) then {_handled = true;};
-		if ((_shift) && (vehicle player == player)) then
-		{
-			cutText [format["Takwondo!!!"], "PLAIN DOWN"];
-			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
-		};
-};
-
-//Kneebend Slow(Shift + Num 2)
-case 80:
-{
-	if(_shift) then {_handled = true;};
-		if ((_shift) && (vehicle player == player)) then
-		{
-			cutText [format["KneeBend Slow baby~"], "PLAIN DOWN"];
-			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
-		};
-};
-
-//Kneebend Fast(Shift + Num 3)
-case 81:
-{
-	if(_shift) then {_handled = true;};
-		if ((_shift) && (vehicle player == player)) then
-		{
-			cutText [format["KneeBend more Hard!!!Move!!Move!!"], "PLAIN DOWN"];
-			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
-		};
-};
-
-//Pushup(Shift + Num 4)
-case 75:
-{
-	if(_shift) then {_handled = true;};
-		if ((_shift) && (vehicle player == player)) then
-		{
-			cutText [format["Pushup!!!!!!"], "PLAIN DOWN"];
-			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-		};
-};
-//Shift+O Zipties ( Civilians can restrain )
-case 24:
-{
-  if(_shift) then {_handled = true;};
-  if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-  {
-   if([false,"zipties",1] call life_fnc_handleInv) then
-    {
-    [] call life_fnc_restrainAction;
-    hint "You restrained him, use your interactionmenu for more options";
-   }
-   else
-   {
-    hint "You have no zipties!";
-   };
-  };
-};
 };
 
 _handled;

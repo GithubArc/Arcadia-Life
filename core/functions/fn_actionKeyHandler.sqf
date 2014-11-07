@@ -28,7 +28,9 @@ if(isNull _curTarget) exitWith {
 	};
 };
 
-if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {[_curTarget] call life_fnc_houseMenu;};
+if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
+	[_curTarget] call life_fnc_houseMenu;
+};
 
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
 if(vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
@@ -48,27 +50,30 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 	};
 };
 
-	
+
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {[_curTarget] call life_fnc_copInteractionMenu;};
-	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == civilian) then {[_curTarget] call life_fnc_civInteractionMenu;};
+	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
+		[_curTarget] call life_fnc_copInteractionMenu;
+	};
+	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == civilian && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then {
+		[_curTarget] call life_fnc_civInteractionMenu;
+	};
 } else {
-			
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
 	_animalTypes = ["Salema_F","Ornate_random_F","Mackerel_F","Tuna_F","Mullet_F","CatShark_F","Turtle_F"];
 	_money = "Land_Money_F";
-	} else {
-		//It's a vehicle! open the vehicle interaction key!
+	
+	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
 		if(!dialog) then {
-			if(player distance _curTarget < ((boundingBox _curTarget select 1) select 0) + 2) then {[_curTarget] call life_fnc_vInteractionMenu;};
-	};
-	};
-		
+			if(player distance _curTarget < ((boundingBox _curTarget select 1) select 0) + 2) then {
+				[_curTarget] call life_fnc_vInteractionMenu;
+			};
+		};
 	} else {
 		//Is it a animal type?
 		if((typeOf _curTarget) in _animalTypes) then {
@@ -99,3 +104,4 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 			};
 		};
 	};
+};
