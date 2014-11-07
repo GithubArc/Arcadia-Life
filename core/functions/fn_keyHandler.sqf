@@ -235,19 +235,19 @@ switch (_code) do
 				_veh = vehicle player;
 			};
 			
-			if(_veh isKindOf "House_F" && playerSide == civilian) then {
+			if(_veh isKindOf "House_F") then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
-					if(_door == 0) exitWith {hint localize "STR_House_Door_NotNear"};
+					if(_door == 0) exitWith {hint "You are not near a door!"};
 					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
 					if(_locked == 0) then {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
 						_veh animate [format["door_%1_rot",_door],0];
-						systemChat localize "STR_House_Door_Lock";
+						systemChat "You have locked that door.";
 					} else {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
 						_veh animate [format["door_%1_rot",_door],1];
-						systemChat localize "STR_House_Door_Unlock";
+						systemChat "You have unlocked that door.";
 					};
 				};
 			} else {
@@ -276,6 +276,63 @@ switch (_code) do
 			};
 		};
 	};
+	//Numpad / Key
+	case 181:
+		{
+			if(_shift) then {_handled = true;};
+				if ((_shift) && (vehicle player == player)) then
+				{
+					cutText [format["GET THE FUCK DOWN FROM THERE!"], "PLAIN DOWN"];
+					player say3D "GTFDFT";
+					[player, "GTFDFT", 15] call life_fnc_globalSound;
+				};
+		};
+	//Numpad * Key
+	case 55:
+		{
+			if(_shift) then {_handled = true;};
+				if ((_shift) && (vehicle player == player)) then
+				{
+					cutText [format["RAPE!"], "PLAIN DOWN"];
+					player say3D "rape";
+					[player, "rape", 15] call life_fnc_globalSound;
+				};
+				};
+	//Del Key
+	case 211:
+	{
+			if(_shift) then {_handled = true;};
+				if ((_shift) && (vehicle player == player)) then
+				{
+					cutText [format["I WILL FUCKIN END YOU!"], "PLAIN DOWN"];
+					player say3D "ifey";
+					[player, "ifey", 15] call life_fnc_globalSound;
+			};
+			};
+	//Pause Key
+	case 197:
+	{
+			if(_shift) then {_handled = true;};
+				if ((_shift) && (vehicle player == player)) then
+				{
+					cutText [format["DONT FUCKIN RUN!"], "PLAIN DOWN"];
+					player say3D "DFR";
+					[player, "DFR", 15] call life_fnc_globalSound;
+			};
+			};
+	//Print Key
+	case 183:
+	{
+			if(_shift) then {_handled = true;};
+				if ((_shift) && (vehicle player == player)) then
+				{
+					cutText [format["GET THE FUCK OUTSIDE!"], "PLAIN DOWN"];
+					player say3D "gtfo";
+					[player, "gtfo", 15] call life_fnc_globalSound;
+			};
+			
+};
+
 };
 
 _handled;

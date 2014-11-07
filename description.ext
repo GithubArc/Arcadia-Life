@@ -48,6 +48,48 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class MedicSirenLong
+	{
+		name = "MedicSirenLong";
+		sound[] = {"\sounds\Medic_Siren_Long.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class IFEY
+	{
+		name = "IFEY";
+		sound[] = {"\sounds\IFEY.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+		class GTFDFT
+	{
+		name = "GTFDFT";
+		sound[] = {"\sounds\IFEY.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class DFR
+	{
+		name = "DFR";
+		sound[] = {"\sounds\DFR.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class GTFO
+	{
+		name = "GTFO";
+		sound[] = {"\sounds\GTFO.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class rape
+	{
+		name = "Rape";
+		sound[] = {"\sounds\rape.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class tazersound
 	{
 		name = "Tazersound";
