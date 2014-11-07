@@ -77,11 +77,14 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",1150000],
+			["O_MRAP_02_gmg_F",1150000],
+			["O_MRAP_02_hmg_F",1150000],
+			["I_Heli_light_03_F",1150000],
+			["B_Heli_Transport_01_camo_F",1150000],
 			["I_MRAP_03_F",5000000]
-
-			
 		];
-		
+	};
+
 		if(license_civ_rebel) then
 		{
 			_return pushBack
@@ -103,8 +106,14 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 8) then
 		{
 			_return pushBack
-			 ["B_MRAP_01_hmg_F",2500000],
-			 ["B_MBT_01_TUSK_F",10000000];
+			 ["B_MRAP_01_hmg_F",2500000];
+			_return pushBack
+			 ["B_APC_Tracked_01_CRV_F",10000000];
+		};
+		if(__GETC__(life_coplevel) > 9) then
+		{
+			_return pushBack
+			 ["B_MBT_01_TUSK_F",25000000];
 		};
 	};
 	
@@ -112,7 +121,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",253000],
 			["O_Heli_Light_02_unarmed_F",750000],
 			["B_Heli_Transport_03_unarmed_F",2400000],
 			["I_Heli_Transport_02_F",2400000],
@@ -129,26 +137,39 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 7) then
 		{
 			_return pushBack
-			["B_Heli_Transport_01_F",850000],
-			["O_Heli_Attack_02_black_F",925000],
-			["I_Heli_Transport_02_F",2400000],
-			["I_Heli_light_03_F",5000000],
-			["B_Heli_Attack_01_F",7500000];
+			["B_Heli_Transport_01_F",850000];
+		};
+		if(__GETC__(life_coplevel) > 8) then
+		{
+			_return pushBack
+			["B_Heli_Light_01_armed_F",850000];
+		};
+		if(__GETC__(life_coplevel) > 9) then
+		{
+			_return pushBack
+			["B_Heli_Attack_01_F",850000];
+			_return pushBack
+			["B_Plane_CAS_01_F",850000];
 		};
 	};
 	
 	case "cop_airhq":
 	{
 		_return pushBack
-		["B_Heli_Light_01_F",75000],
-		["B_Heli_Transport_03_F",75600444];
+		["B_Heli_Light_01_F",75000];
+		_return pushBack
+		["B_Heli_Transport_03_F",175600];
 		if(__GETC__(life_coplevel) > 7) then
 		{
 			_return pushBack
-			["B_Heli_Transport_01_F",850000],
-			["O_Heli_Attack_02_black_F",925000],
-			["I_Heli_Transport_02_F",2400000],
-			["I_Heli_light_03_F",5000000],
+			["B_Heli_Transport_01_F",850000];
+			_return pushBack
+			["O_Heli_Attack_02_black_F",925000];
+			_return pushBack
+			["I_Heli_Transport_02_F",2400000];
+			_return pushBack
+			["I_Heli_light_03_F",5000000];
+			_return pushBack
 			["B_Heli_Attack_01_F",7500000];
 		};
 	};
@@ -159,6 +180,7 @@ switch (_shop) do
 		[
 			["C_Rubberboat",5000],
 			["C_Boat_Civil_01_F",22000]
+			["B_SDV_01_F",100000]
 		];
 	};
 
