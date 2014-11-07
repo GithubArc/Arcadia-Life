@@ -260,8 +260,8 @@ switch (_code) do
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
-						player say3D "lock";
-						[player, "lock", 10] call life_fnc_globalSound;
+						player say3D "car_lock";
+						[player, "car_lock", 10] call life_fnc_globalSound;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
