@@ -276,63 +276,6 @@ switch (_code) do
 			};
 		};
 	};
-	//Numpad / Key
-	case 181:
-		{
-			if(_shift) then {_handled = true;};
-				if ((_shift) && (vehicle player == player)) then
-				{
-					cutText [format["GET THE FUCK DOWN FROM THERE!"], "PLAIN DOWN"];
-					player say3D "GTFDFT";
-					[player, "GTFDFT", 15] call life_fnc_globalSound;
-				};
-		};
-	//Numpad * Key
-	case 55:
-		{
-			if(_shift) then {_handled = true;};
-				if ((_shift) && (vehicle player == player)) then
-				{
-					cutText [format["RAPE!"], "PLAIN DOWN"];
-					player say3D "rape";
-					[player, "rape", 15] call life_fnc_globalSound;
-				};
-				};
-	//Del Key
-	case 211:
-	{
-			if(_shift) then {_handled = true;};
-				if ((_shift) && (vehicle player == player)) then
-				{
-					cutText [format["I WILL FUCKIN END YOU!"], "PLAIN DOWN"];
-					player say3D "ifey";
-					[player, "ifey", 15] call life_fnc_globalSound;
-			};
-			};
-	//Pause Key
-	case 197:
-	{
-			if(_shift) then {_handled = true;};
-				if ((_shift) && (vehicle player == player)) then
-				{
-					cutText [format["DONT FUCKIN RUN!"], "PLAIN DOWN"];
-					player say3D "DFR";
-					[player, "DFR", 15] call life_fnc_globalSound;
-			};
-			};
-	//Print Key
-	case 183:
-	{
-			if(_shift) then {_handled = true;};
-				if ((_shift) && (vehicle player == player)) then
-				{
-					cutText [format["GET THE FUCK OUTSIDE!"], "PLAIN DOWN"];
-					player say3D "gtfo";
-					[player, "gtfo", 15] call life_fnc_globalSound;
-			};
-			
-};
-
 };
 
 _handled;
