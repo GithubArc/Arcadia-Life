@@ -261,6 +261,7 @@ switch (_code) do
 						};
 						systemChat localize "STR_MISC_VehUnlock";
 						player say3D "lock";
+						[player, "lock", 10] call life_fnc_globalSound;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -269,6 +270,7 @@ switch (_code) do
 						};	
 						systemChat localize "STR_MISC_VehLock";
 						player say3D "unlock";
+						[player, "unlock", 10] call life_fnc_globalSound;
 					};
 				};
 			};

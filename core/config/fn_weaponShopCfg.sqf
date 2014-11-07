@@ -783,7 +783,7 @@ switch(_shop) do
                         {
                                 ["Altis Chief Shop",
                                         [
-                                                ["launch_RPG32_F",nil,50000],
+                        ["launch_RPG32_F",nil,50000],
                         ["RPG32_F",nil,50000],
                         ["RPG32_HE_F",nil,50000],
                         ["launch_NLAW_F",nil,50000],
@@ -941,7 +941,7 @@ switch(_shop) do
 												["arifle_MX_SW_F",nil,15000],
 												["arifle_MX_F",nil,15000],
 												["LMG_Zafir_F",nil,100000],
-												["launch_RPG32_F",nil,500],
+												["launch_RPG32_F",nil,500000],
 												["srifle_LRR_F",nil,500000],
                                                 ["srifle_DMR_01_F",nil,50000],
                                                 ["arifle_SDAR_F",nil,20000],
@@ -957,7 +957,7 @@ switch(_shop) do
                                                 ["30Rnd_9x21_Mag",nil,200],
                                                 ["20Rnd_556x45_UW_mag",nil,125],
                                                 ["30Rnd_556x45_Stanag",nil,300],
-												["RPG32_HE_F",nil,500],
+												["RPG32_HE_F",nil,50000],
                                                 ["10Rnd_762x51_Mag",nil,500],
 												["150Rnd_762x51_Box_Tracer",nil,500],
                                                 ["30Rnd_65x39_caseless_green",nil,275],
@@ -970,7 +970,7 @@ switch(_shop) do
                                                 ["MediKit",nil,5000],
                                                 ["Rangefinder",nil,7500],
 												["Medikit",nil,7500],
-                                                ["NVGoggles",nil,0]
+                                                ["NVGoggles",nil,0],
                                         ]
                                 ];
                         };

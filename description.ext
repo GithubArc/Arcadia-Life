@@ -8,7 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-LoadScreen  = "loadscreen\loadscreen.jpg";
+loadScreen  = "loadScreen\loadScreen.jpg";
 
 class Header
 {
@@ -40,28 +40,7 @@ class CfgFunctions
 
 class CfgSounds
 {
-	
-	class car_lock
-	{
-	name = "car_lock";
-	sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
-	titles[] = {};
-	};
-	
-	class weed_song
-	{
-	name = "weed_song";
-	sound[] = {"\sounds\weed_song.ogg", 1.0, 1};
-	titles[] = {};
-	};
-	
-	class unlock
-	{
-    name = "unlock";
-    sound[] = {"\sounds\unlock.ogg", 1.0, 1};
-    titles[] = {};
-	};
-	
+	sounds[] = {};
 	class SirenLong
 	{
 		name = "SirenLong";
@@ -81,6 +60,34 @@ class CfgSounds
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
+	};
+	
+	class car_lock
+	{
+	name = "car_lock";
+	sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+	titles[] = {};
+	};
+	
+	class unlock
+	{
+    name = "unlock";
+    sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+    titles[] = {};
+	};
+	
+	class weed_song
+	{
+	name = "weed_song";
+	sound[] = {"\sounds\weed_song.ogg", 1.0, 1};
+	titles[] = {};
+	};
+	
+	class AllahuAkbar
+	{
+	name = "AllahuAkbar";
+	sound[] = {"\sounds\AllahuAkbar.ogg", 1.0, 1};
+	titles[] = {};
 	};
 	
 	class PickaxeUseSound // insert this Class                                      
@@ -117,7 +124,7 @@ class CfgSounds
     sound[] = {"\sounds\cuff.ogg", 1.0, 1};
     titles[] = {};
 	}; 
-
+	
 };
 
 class CfgDebriefing

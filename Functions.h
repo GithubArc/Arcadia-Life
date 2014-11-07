@@ -115,6 +115,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class surrender {};
+		class suicideBomb  {};
 	};
 	
 	class Housing

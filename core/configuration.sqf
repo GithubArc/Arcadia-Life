@@ -33,6 +33,7 @@ life_action_gathering = false;
 life_god = false; //Add this
 life_frozen = false; //And this
 life_markers = false; //Finally this
+life_isSuicide = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -336,6 +337,7 @@ life_weapon_shop_array =
 	["SMG_01_F",1500],
 	["arifle_Mk20C_F",4500],
 	["30Rnd_45ACP_Mag_SMG_01",60],
+	["V_HarnessOGL_gry",999999],
 	["30Rnd_9x21_Mag",30]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
