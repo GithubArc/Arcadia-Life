@@ -8,7 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-loadScreen  = "loadScreen\loadScreen.jpg";
+loadScreen  = "loadscreen\loadscreen.jpg";
 
 class Header
 {
