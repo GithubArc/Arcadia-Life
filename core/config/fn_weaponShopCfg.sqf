@@ -970,7 +970,7 @@ switch(_shop) do
                                                 ["MediKit",nil,5000],
                                                 ["Rangefinder",nil,7500],
 												["Medikit",nil,7500],
-                                                ["NVGoggles",nil,0],
+                                                ["NVGoggles",nil,0]
                                         ]
                                 ];
                         };

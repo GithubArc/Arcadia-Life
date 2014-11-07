@@ -12,10 +12,10 @@ life_isSuiciding = true;
 
 [[0,format["Somebody will blow up in 10 seconds"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP; // 10 second warning shown in chat
 
-sleep 2;
+sleep 1;
 player say3D "AllahuAkbar";
 [player, "AllahuAkbar", 50] call life_fnc_globalSound;
-sleep 8;
+sleep 10;
 //BOOM
 
 if(vest player != "V_HarnessOGL_gry") exitWith {life_isSuicide = false;};

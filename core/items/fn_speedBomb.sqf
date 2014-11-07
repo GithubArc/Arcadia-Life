@@ -28,15 +28,16 @@ life_experience = life_experience + 25;
 [_unit] spawn
 {
 	_veh = _this select 0;
-	waitUntil {(speed _veh) > 70};
-	[[_veh, "caralarm",10],"life_fnc_playSound",true,false] spawn BIS_fnc_MP;
+	waitUntil {(speed _veh) > 100};
+	[[_veh, "bombarm",10],"life_fnc_globalSound",true,false] spawn life_fnc_MP;;
 	hint "A speed bomb you planted on a vehicle has just become active!";
-	{ [[2,"A speed bomb has been activated on this vehicle and will detonate when your speed drops below 50km/h!"],"life_fnc_broadcast",_x,false] spawn BIS_fnc_MP; } foreach (crew _veh);
-	waitUntil {(speed _veh) < 50};
+	{ [[2,"A speed bomb has been activated on this vehicle and will detonate when your speed drops below 60km/h!"],"life_fnc_broadcast",_x,false] spawn life_fnc_MP; } foreach (crew _veh);
+	waitUntil {(speed _veh) < 60};
 	serv_killed = [player,"1090"];
 	publicVariableServer "serv_killed";
 	_test = "Bo_Mk82" createVehicle [0,0,9999];
 	_test setPos (getPos _veh);
 	_test setVelocity [100,0,0];
 	hint "A speed bomb you planted on a vehicle has DETONATED!";
+[[0,format["%1 was blown up by a carbomb.",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 };
