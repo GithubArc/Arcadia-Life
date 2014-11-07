@@ -3155,6 +3155,14 @@
 			<Italian>Cannabis</Italian>
 			<Portuguese>Maconha não Processada</Portuguese>
 		</Key>
+			<Key ID="STR_Item_MedCannabis">
+			<Original>Super-Sticky Cannabis</Original>
+			<English>Super-Sticky Cannabis</English>
+			<German>Super-Sticky Kannabis</German>
+			<French>Super-Sticky Cannabis</French>
+			<Italian>Super-Sticky Cannabis</Italian>
+			<Portuguese>Maconha não Super-Sticky</Portuguese>
+		</Key>
 		<Key ID="STR_Item_Apple">
 			<Original>Apple</Original>
 			<English>Apple</English>
@@ -3250,6 +3258,14 @@
 			<French>Marijuana</French>
 			<Italian>Marijuana</Italian>
 			<Portuguese>Maconha</Portuguese>
+		</Key>
+			<Key ID="STR_Item_MedMarijuana">
+			<Original>Super-Sticky Marijuana</Original>
+			<English>Super-Sticky Marijuana</English>
+			<German>Super-Sticky Marihuana</German>
+			<French>Super-Sticky Marijuana</French>
+			<Italian>Super-Sticky Marijuana</Italian>
+			<Portuguese>Super-Sticky Maconha</Portuguese>
 		</Key>
 		<Key ID="STR_Item_RabbitMeat">
 			<Original>Rabbit Meat</Original>
@@ -3724,6 +3740,14 @@
 			<French>Transformation de la Coca</French>
 			<Italian>Processo Cocaina</Italian>
 			<Portuguese>Treinamento de Cocaina</Portuguese>
+		</Key>		
+		<Key ID="STR_License_MedMarijuana">
+			<Original>Medical Marijuana Prescription</Original>
+			<English>Medical Marijuana Prescription</English>
+			<German>Medical Marijuana Prescription</German>
+			<French>Medical Marijuana Prescription</French>
+			<Italian>Medical Marijuana Prescription</Italian>
+			<Portuguese>Medical Marijuana Prescription</Portuguese>
 		</Key>
 		<Key ID="STR_License_Marijuana">
 			<Original>Marijuana Training</Original>
@@ -4114,13 +4138,21 @@
 			<Portuguese>Processando Cocaina</Portuguese>
 		</Key>
 		<Key ID="STR_Process_Marijuana">
-			<Original>Processing Marijuana</Original>
-			<English>Processing Marijuana</English>
+			<Original>Drying Marijuana</Original>
+			<English>Drying Marijuana</English>
 			<German>Marihuana wird verarbeitet</German>
 			<French>Traitement de Marijuana</French>
 			<Italian>Processando Marijuana</Italian>
 			<Portuguese>Processando Erva</Portuguese>
 		</Key>
+			<Key ID="STR_Process_MedMarijuana">
+			<Original>Drying Super-Sticky Marijuana</Original>
+			<English>Drying Super-Sticky Marijuana</English>
+			<German>Marihuana wird verarbeitet</German>
+			<French>Traitement de Marijuana</French>
+			<Italian>Processando Marijuana</Italian>
+			<Portuguese>Processando Erva</Portuguese>
+		</Key>	
 		<Key ID="STR_Process_Cement">
 			<Original>Mixing Cement</Original>
 			<English>Mixing Cement</English>
@@ -4194,6 +4226,14 @@
 			<French>Récolter du Cannabis</French>
 			<Italian>Raccogli Cannabis</Italian>
 			<Portuguese>Colher Erva</Portuguese>
+		</Key>
+			<Key ID="STR_Gather_MedCannabis">
+			<Original>Gather Super-Sticky Cannabis</Original>
+			<English>Gather Super-Sticky Cannabis</English>
+			<German>Kannabis Super-Sticky sammeln</German>
+			<French>Récolter du Super-Sticky Cannabis</French>
+			<Italian>Raccogli Super-Sticky Cannabis</Italian>
+			<Portuguese>Colher Super-Sticky Erva</Portuguese>
 		</Key>
 		<Key ID="STR_Gather_Cocaine">
 			<Original>Gather Cocaine</Original>

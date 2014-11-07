@@ -59,7 +59,7 @@ switch (_mode) do
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
-			case "license_civ_medmarijuana": {_var = "medmarijuana"}; //Medical Marijuana processing license cost
+			case "license_civ_medmarijuana": {_var = "medmarijuana"}; //Medical Marijuana prescription cost
 			case "license_civ_gang": {_var = "gang"}; //Gang license cost
 			case "license_civ_rebel": {_var = "rebel"}; //Rebel License
 			case "license_civ_truck":{_var = "truck"}; //Truck License

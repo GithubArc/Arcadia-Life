@@ -20,6 +20,8 @@ switch (_mode) do
 			case "oilp": {"life_inv_oilp"};
 			case "heroinu": {"life_inv_heroinu"};
 			case "heroinp": {"life_inv_heroinp"};
+			case "medcannabis": {"life_inv_medcannabis"};
+			case "medmarijuana": {"life_inv_medmarijuana"};
 			case "cannabis": {"life_inv_cannabis"};
 			case "marijuana": {"life_inv_marijuana"};
 			case "apple": {"life_inv_apple"};
@@ -78,6 +80,8 @@ switch (_mode) do
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};
 			case "life_inv_heroinp": {"heroinp"};
+			case "life_inv_medcannabis": {"medcannabis"};
+			case "life_inv_medmarijuana": {"medmarijuana"};
 			case "life_inv_cannabis": {"cannabis"};
 			case "life_inv_marijuana": {"marijuana"};
 			case "life_inv_apple": {"apple"};

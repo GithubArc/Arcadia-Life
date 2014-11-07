@@ -40,6 +40,22 @@ switch (true) do
 		[_item] call life_fnc_storageBox;
 	};
 	
+	case (_item == "marijuana"):
+	{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_weed;
+		};
+	};
+	
+	case (_item == "medmarijuana"):
+	{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_weed;
+		};
+	};
+
 	case (_item == "redgull"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then

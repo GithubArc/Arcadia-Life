@@ -40,10 +40,18 @@ class CfgFunctions
 
 class CfgSounds
 {
+	
 	class car_lock
 	{
 	name = "car_lock";
 	sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+	titles[] = {};
+	};
+	
+	class weed_song
+	{
+	name = "weed_song";
+	sound[] = {"\sounds\weed_song.ogg", 1.0, 1};
 	titles[] = {};
 	};
 	
@@ -53,7 +61,6 @@ class CfgSounds
     sound[] = {"\sounds\unlock.ogg", 1.0, 1};
     titles[] = {};
 	};
-	sounds[] = {};
 	
 	class SirenLong
 	{
