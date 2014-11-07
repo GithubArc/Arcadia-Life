@@ -90,7 +90,6 @@ switch (_shop) do
 			_return pushBack
 			["B_G_Offroad_01_armed_F",5750000];
 		};
-	};
 	
 	case "cop_car":
 	{
