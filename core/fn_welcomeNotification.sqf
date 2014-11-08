@@ -17,4 +17,13 @@ format["Welcome %1, Please read the following as it is important!",profileName] 
 	"If you are having issues with interacting / picking up items just wait. A quick way to know when you can interact with that item if the server allows it is by pressing your tilde key (~) and using the circle to highlight the object, when it says for example 'Pile of Money' then
 	that means you can pick it up!."
 ];
-	
+[] spawn {
+   sleep 5;
+    if(playerSide == west) then {
+  hintC "Welcome to the ALPD, please be on teamspeak";
+  };
+  if(playerSide == civilian) then {
+  hintC "Behave yourself, you're a civilian.";
+  };
+  player say2d "welcome";
+ };

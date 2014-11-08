@@ -3613,6 +3613,22 @@
 			<Italian>Licenza di Guida</Italian>
 			<Portuguese>Licença de Motorista</Portuguese>
 		</Key>
+		<Key ID="STR_License_NATO">
+			<Original>NATO Training</Original>
+			<English>NATO Training</English>
+			<German>Führerschein</German>
+			<French>Permis de Conduire</French>
+			<Italian>Licenza di Guida</Italian>
+			<Portuguese>Licença de Motorista</Portuguese>
+		</Key>
+			<Key ID="STR_License_Rebel_Pilot">
+			<Original>Rebel Pilot Training</Original>
+			<English>Rebel Pilot Training</English>
+			<German>RebelPilotenschein</German>
+			<French>RebelLicense de Pilote</French>
+			<Italian>RebelLicenza da Pilota</Italian>
+			<Portuguese>RebelLicença de Piloto</Portuguese>
+		</Key>
 		<Key ID="STR_License_Pilot">
 			<Original>Pilot License</Original>
 			<English>Pilot License</English>

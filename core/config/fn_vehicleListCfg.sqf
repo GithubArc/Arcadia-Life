@@ -58,15 +58,34 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",275000],
-			["O_Truck_03_transport_F",200000],
-			["O_Truck_03_covered_F",250000],
-			["B_Truck_01_box_F",350000],
-			["O_Truck_03_device_F",1450000],
-			["B_Truck_01_fuel_F",4000000]
+			["I_Truck_02_fuel_F",85000],
+			["I_Truck_02_transport_F",85000],
+			["B_G_Van_01_transport_F",100000],
+			["B_G_Van_01_fuel_F",100000],
+			["I_Truck_02_covered_F",125000],
+			["I_Truck_02_transport_F",125000],
+			["I_Truck_02_covered_F",350000],
+			["B_Truck_01_transport_F",1175000],
+			["O_Truck_03_transport_F",1200000],
+			["O_Truck_03_covered_F",1250000],
+			["B_Truck_01_box_F",1350000],
+			["O_Truck_03_device_F",3450000],
+			["O_Truck_03_fuel_F",3450000]
+			
 		];	
+	};
+	
+	case "reb_air":
+	{
+		if(license_reb_air) then
+		{
+			_return pushBack
+			["I_Heli_light_03_F",1150000];
+			_return pushBack
+			["O_Heli_Attack_02_F",1150000];
+			_return pushBack
+			["O_Plane_CAS_02_F",25000000];
+		};
 	};
 	
 	
@@ -76,20 +95,23 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",1150000],
-			["O_MRAP_02_gmg_F",1150000],
-			["O_MRAP_02_hmg_F",1150000],
-			["I_Heli_light_03_F",1150000],
-			["B_Heli_Transport_01_camo_F",1150000],
-			["I_MRAP_03_F",5000000]
 		];
-	};
 
 		if(license_civ_rebel) then
 		{
 			_return pushBack
+			["O_MRAP_02_F",1150000];
+			_return pushBack
+			["O_MRAP_02_hmg_F",1150000];
+			_return pushBack
+			["O_MRAP_02_gmg_F",1150000];
+			_return pushBack
+			["I_MRAP_03_F",5000000];
+			_return pushBack
 			["B_G_Offroad_01_armed_F",5750000];
 		};
+	};
+	
 	
 	case "cop_car":
 	{
@@ -143,12 +165,18 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Light_01_armed_F",850000];
 		};
+	};
+	
+	case "nato_air":
+	{
 		if(__GETC__(life_coplevel) > 9) then
 		{
 			_return pushBack
+			["B_UAV_02_CAS_F",250000];
+			_return pushBack
 			["B_Heli_Attack_01_F",850000];
 			_return pushBack
-			["B_Plane_CAS_01_F",850000];
+			["B_Plane_CAS_01_F",1850000];
 		};
 	};
 	

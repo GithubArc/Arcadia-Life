@@ -86,6 +86,10 @@ __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
+life_god = false; //Add this
+life_frozen = false; //And this
+life_markers = false; //Finally this
+life_TankLaster = 1;
 
 life_vehicles = [];
 bank_robber = [];
@@ -177,6 +181,7 @@ life_licenses =
 [
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
+	["license_cop_nato","cop"],
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
@@ -188,7 +193,9 @@ life_licenses =
 	["license_civ_oil","civ"],
 	["license_civ_dive","civ"],
 	["license_civ_truck","civ"],
+	["license_civ_rifle","civ"],
 	["license_civ_gun","civ"],
+	["license_reb_air","civ"],
 	["license_civ_rebel","civ"],
 	["license_civ_coke","civ"],
 	["license_civ_diamond","civ"],
@@ -215,25 +222,25 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 sell_array = 
 [
 	["apple",50],
-	["heroinu",1850],
-	["heroinp",2650],
+	["heroinu",1322],
+	["heroinp",3225,
 	["salema",45],
 	["ornate",40],
-	["mackerel",175],
-	["tuna",700],
-	["mullet",250],
-	["catshark",300],
+	["mackerel",475],
+	["tuna",1700],
+	["mullet",750],
+	["catshark",800],
 	["rabbit",65],
-	["oilp",3200],
-	["turtle",3000],
+	["oilp",10200],
+	["turtle",13000],
 	["water",5],
 	["coffee",5],
-	["turtlesoup",1000],
+	["turtlesoup",11000],
 	["donuts",60],
 	["marijuana",2350],
 	["cannabis",1400],
-	["medmarijuana",32350],
-	["medcannabis",51400],
+	["medmarijuana",7350],
+	["medcannabis",1400],
 	["tbacon",25],
 	["lockpick",75],
 	["zipties",50],
@@ -241,9 +248,9 @@ sell_array =
 	["redgull",200],
 	["peach",55],
 	["cocaine",3000],
-	["cocainep",5000],
-	["diamond",750],
-	["diamondc",2000],
+	["cocainep",8000],
+	["diamond",1750],
+	["diamondc",5000],
 	["iron_r",3200],
 	["copper_r",1500],
 	["salt_r",1650],
@@ -259,14 +266,14 @@ __CONST__(sell_array,sell_array);
 buy_array = 
 [
 	["apple",65],
-	["heroinu",2850],
-	["heroinp",3650],
-	["cocaine",5000],
-	["cocainep",6000],
-	["marijuana",3350],
-	["cannabis",2350],
-	["medmarijuana",32350],
-	["medcannabis",51400],
+	["heroinu",12850],
+	["heroinp",13650],
+	["cocaine",15000],
+	["cocainep",16000],
+	["marijuana",13350],
+	["cannabis",12350],
+	["medmarijuana",12350],
+	["medcannabis",11400],
 	["rabbit",75],
 	["salema",55],
 	["ornate",50],
@@ -275,8 +282,8 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
-	["turtle",4000],
-	["turtlesoup",2500],
+	["turtle",14000],
+	["turtlesoup",12500],
 	["donuts",120],
 	["coffee",10],
 	["tbacon",75],
@@ -396,6 +403,6 @@ life_garage_sell =
 	["C_Boat_Civil_01_police_F",4950],
 	["B_Boat_Armed_01_minigun_F",21000],
 	["B_SDV_01_F",45000],
-	["B_MRAP_01_F",10000]
+	["B_MRAP_01_F",60000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);

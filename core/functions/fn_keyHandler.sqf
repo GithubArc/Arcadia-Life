@@ -127,23 +127,6 @@ switch (_code) do
 			};
 		};
 	};
-	//Shift+O Zipties ( Civilians can restrain )
-case 24:
-{
-  if(_shift) then {_handled = true;};
-  if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-  {
-   if([false,"zipties",1] call life_fnc_handleInv) then
-    {
-    [] call life_fnc_restrainAction;
-    hint "You restrained him, use your interactionmenu for more options";
-   }
-   else
-   {
-    hint "You have no zipties!";
-   };
-  };
-};
 	
 	//Knock out, this is experimental and yeah...
 	case 34:
@@ -277,8 +260,7 @@ case 24:
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
-						player say3D "car_lock";
-						[player, "car_lock", 10] call life_fnc_globalSound;
+						[player, "unlock", 10] call life_fnc_globalSound;						
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -286,7 +268,6 @@ case 24:
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
-						player say3D "unlock";
 						[player, "unlock", 10] call life_fnc_globalSound;
 					};
 				};

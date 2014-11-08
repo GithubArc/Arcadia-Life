@@ -24,6 +24,10 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_O_Wetsuit",nil,10000];
 		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret pushBack ["U_I_GhillieSuit",nil,550];
+		};
 		if(__GETC__(life_coplevel) > 8) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,550];

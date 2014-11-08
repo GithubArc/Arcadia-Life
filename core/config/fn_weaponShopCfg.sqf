@@ -407,6 +407,7 @@ switch(_shop) do
                         ["Titan_AT",nil,500],
                         ["Titan_AP",nil,500],
                         ["srifle_LRR_F",nil,500],
+						["7Rnd_408_Mag",nil,100],
                         ["srifle_GM6_F",nil,500],
                         ["5Rnd_127x108_APDS_Mag",nil,500],
                         ["5Rnd_127x108_Mag",nil,500],
@@ -637,7 +638,8 @@ switch(_shop) do
                         ["ClaymoreDirectionalMine_Remote_Mag",nil,500],
                         ["ATMine_Range_Mag",nil,500],
                         ["Chemlight_red",nil,500],
-                        ["Chemlight_green",nil,500]
+                        ["Chemlight_green",nil,500],
+						["B_UavTerminal",nil,250000]
                                         ]
                                 ];
                         };
@@ -936,41 +938,48 @@ switch(_shop) do
                         {
                                 ["Mohammed's Jihadi Shop",
                                         [
-                                                ["arifle_TRG20_F",nil,25000],
-                                                ["arifle_Katiba_F",nil,30000],
-												["arifle_MX_SW_F",nil,15000],
-												["arifle_MX_F",nil,15000],
-												["LMG_Zafir_F",nil,100000],
+                                                ["arifle_TRG20_ACO_pointer_F",nil,35000],
+                                                ["30Rnd_556x45_Stanag",nil,3000],
+                                                ["arifle_Katiba_C_ACO_pointer_snds_F",nil,42000],
+                                                ["30Rnd_65x39_caseless_green",nil,2700],
+												["30Rnd_65x39_caseless_mag_Tracer",nil,5000],
+												["arifle_MX_SW_Black_Hamr_pointer_F",nil,15000],
+												["100Rnd_65x39_caseless_mag_Tracer",nil,5000],
+												["arifle_MX_RCO_pointer_snds_F",nil,15000],
+                                                ["30Rnd_65x39_caseless_green",nil,2750],
+												["30Rnd_65x39_caseless_mag_Tracer",nil,5000],
+												["LMG_Zafir_pointer_F",nil,100000],
+												["150Rnd_762x51_Box_Tracer",nil,5500],
 												["launch_RPG32_F",nil,500000],
-												["srifle_LRR_F",nil,500000],
-                                                ["srifle_DMR_01_F",nil,50000],
+												["RPG32_F",nil,40000],
+												["RPG32_HE_F",nil,50000],
+												["srifle_LRR_LRPS_F",nil,500000],
+												["7Rnd_408_Mag",nil,5000],
+                                                ["srifle_DMR_01_DMS_snds_F",nil,50000],
+                                                ["10Rnd_762x51_Mag",nil,5000],
                                                 ["arifle_SDAR_F",nil,20000],
+                                                ["20Rnd_556x45_UW_mag",nil,125],
+                                                ["30Rnd_556x45_Stanag",nil,300],
+                                                ["muzzle_snds_H_MG",nil,50000],
+                                                ["muzzle_snds_B",nil,50000],
+												["muzzle_snds_M",nil,50000],
                                                 ["optic_ACO_grn",nil,500],
-												["acc_pointer_IR",nil,3500],
-												["optic_LRPS",nil,500],
+												["optic_LRPS",nil,5000],
+												["optic_Nightstalker",nil,150000],
+												["acc_pointer_IR",nil,5000],
 												["optic_NVS",nil,10000],
 												["optic_MRCO",nil,5000],
                                                 ["optic_Holosight",nil,3600],
                                                 ["acc_flashlight",nil,1000],
                                                 ["optic_Hamr",nil,7500],
-												["7Rnd_408_Mag",nil,10000],
-                                                ["30Rnd_9x21_Mag",nil,200],
-                                                ["20Rnd_556x45_UW_mag",nil,125],
-                                                ["30Rnd_556x45_Stanag",nil,300],
-												["RPG32_HE_F",nil,50000],
-                                                ["10Rnd_762x51_Mag",nil,500],
-												["150Rnd_762x51_Box_Tracer",nil,500],
-                                                ["30Rnd_65x39_caseless_green",nil,275],
-												["30Rnd_65x39_caseless_mag_Tracer",nil,500],
-												["100Rnd_65x39_caseless_mag_Tracer",nil,5000],
-												["ToolKit",nil,0],
-                                                ["itemgps",nil,0],
-                                                ["ItemMap",nil,0],
-                                                ["FirstAidKit",nil,0],
+												["ToolKit",nil,250],
+                                                ["itemgps",nil,250],
+                                                ["ItemMap",nil,250],
+                                                ["FirstAidKit",nil,250],
                                                 ["MediKit",nil,5000],
                                                 ["Rangefinder",nil,7500],
 												["Medikit",nil,7500],
-                                                ["NVGoggles",nil,0]
+                                                ["NVGoggles",nil,2550]
                                         ]
                                 ];
                         };
@@ -985,18 +994,46 @@ switch(_shop) do
                         case (!license_civ_gun): {"You don't have a Firearms license!"};
                         default
                         {
-                                ["Billy Joe's Firearms",
+                                ["Jimbo's Firearms",
                                         [
                                                 ["hgun_Rook40_F",nil,6500],
+												["hgun_Pistol_Signal_F",nil,1500],
                                                 ["hgun_Pistol_heavy_02_F",nil,9850],
                                                 ["hgun_ACPC2_F",nil,11500],
-                                                ["hgun_PDW2000_F",nil,20000],
-                                                ["optic_ACO_grn_smg",nil,2500],
+                                                ["hgun_Pistol_heavy_01_MRD_F",nil,19850],
                                                 ["V_Rangemaster_belt",nil,4900],
+												["6Rnd_GreenSignal_F",nil,25],
                                                 ["16Rnd_9x21_Mag",nil,25],
                                                 ["9Rnd_45ACP_Mag",nil,45],
                                                 ["6Rnd_45ACP_Cylinder",nil,50],
-                                                ["30Rnd_9x21_Mag",nil,75]
+												["11Rnd_45ACP_Mag",nil,150],
+                                                ["optic_Yorris",nil,1750],
+												["optic_MRD",nil,2500]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		case "rifle":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        case (!license_civ_gun): {"You don't have a Firearms license!"};
+                        default
+                        {
+                                ["Billy Joe's Firearms",
+                                        [		
+                                                ["hgun_PDW2000_F",nil,20000],
+                                                ["SMG_01_F",nil,38000],
+                                                ["SMG_02_F",nil,50000],
+		                                        ["arifle_Mk20C_F",nil,20000],
+                                                ["optic_ACO_grn_smg",nil,2500],
+												["optic_Hamr",nil,5400],
+                                                ["V_BandollierB_blk",nil,8900],
+                                                ["30Rnd_9x21_Mag",nil,750],
+												["30Rnd_45ACP_Mag_SMG_01",nil,1500],
+												["30Rnd_556x45_Stanag",nil,5000]
                                         ]
                                 ];
                         };

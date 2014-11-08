@@ -17,8 +17,8 @@ switch (_item) do
 	case "heroinp": {4};
 	case "cannabis": {4};
 	case "marijuana": {3};
-	case "medcannabis": {1};
-	case "medmarijuana": {1};
+	case "medcannabis": {5};
+	case "medmarijuana": {4};
 	case "apple": {1};
 	case "water": {1};
 	case "peach": {1};

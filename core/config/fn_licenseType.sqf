@@ -19,10 +19,13 @@ switch (_mode) do
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
+			case "reb_air": {_var = "license_reb_air"}; //reb air license cost
 			case "gun": {_var = "license_civ_gun"}; //Firearm/gun license cost
+			case "rifle": {_var = "license_civ_rifle"}; //Firearm/gun license cost
 			case "dive": {_var = "license_civ_dive"}; //Diving license cost
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
+			case "nato": {_var = "license_cop_nato"}; //Nato License cost
 			case "swat": {_var = "license_cop_swat"}; //Swat License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
@@ -49,12 +52,15 @@ switch (_mode) do
 		switch (_type) do
 		{
 			case "license_civ_driver": {_var = "driver"}; //Drivers License cost
+			case "license_reb_air": {_var = "reb_air"}; //rebel air License cost
 			case "license_civ_boat": {_var = "boat"}; //Boating license cost
 			case "license_civ_air": {_var = "pilot"}; //Pilot/air license cost
+			case "license_civ_rifle": {_var = "rifle"}; //Firearm/gun license cost
 			case "license_civ_gun": {_var = "gun"}; //Firearm/gun license cost
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
+			case "license_cop_nato": {_var = "nato"}; //NATO License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
